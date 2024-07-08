@@ -1,0 +1,70 @@
+
+html{
+display: flex;
+justify-content: center;
+align-content: center;
+align-items: center;
+height:100%;
+margin: 0;
+padding: 30px;
+min-width: 1100px;
+}
+
+h1{
+    text-align: center;
+    display: inline-block;
+   
+}
+
+#icon{
+    width:100px;
+    display: inline-block;
+}
+
+#bmi-output{
+    display: inline-block;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+#heading{
+  text-align: center;
+  display: inline-block;
+}
+
+#message{
+    text-align: center;
+}
+
+#title{
+    text-align: center;
+}
+
+#output{
+    text-align: center;
+}
+
+#tb{
+    width: 300px;
+    margin-bottom: -40px;
+}
+#mike{
+    width: 328px;
+   margin-bottom: -5px;
+}
+
+#alex{
+    width: 250px;
+}
+#adam{
+    width: 300px;
+    margin-bottom: -40px;
+}
+#trump{
+    width: 175px;
+}
+#donald{
+    width: 280px;
+    margin-bottom: 20px;
+}
