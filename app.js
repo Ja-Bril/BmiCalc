@@ -19,16 +19,16 @@ function calculateBmi(){
     } else if(bmi >=25 && bmi <=29.9){
         document.getElementById('message').innerHTML = 'You are overweight, however that may not necessarily mean unhealthy'
         document.getElementById('message2').innerHTML= 'Individuals with the same BMI categorization: '
-        document.getElementById('tb').src = './tom.png'
-        document.getElementById('adam').src = './adam.png'
-        document.getElementById('alex').src = './alex.png'
+        document.getElementById('tb').src = './assets/tom.png'
+        document.getElementById('adam').src = './assets/adam.png'
+        document.getElementById('alex').src = './assets/alex.png'
   
     } else if (bmi>=30){
         document.getElementById('message').innerHTML = 'You are obese, however that may not necessarily mean unhealthy'
         document.getElementById('message2').innerHTML= 'Individuals with the same BMI categorization: '
-        document.getElementById('donald').src = './donald.png'
-        document.getElementById('mike').src = './mike.png'
-        document.getElementById('trump').src = './trump.png'
+        document.getElementById('donald').src = './assets/donald.png'
+        document.getElementById('mike').src = './assets/mike.png'
+        document.getElementById('trump').src = './assets/trump.png'
         
     }
 
