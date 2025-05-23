@@ -8,12 +8,36 @@ height:100%;
 margin: 0;
 padding: 30px;
 min-width: 1100px;
+font-family: "Inter";
+font-size: 18px;
+font-weight: 400;
+overflow: hidden;
+}
+
+body{
+    margin: 0; 
+    height: 100%; 
+    overflow: hidden
 }
 
 h1{
     text-align: center;
     display: inline-block;
-   
+    font-family: "Public Sans";
+    font-weight: 600;
+    font-size: 36;
+}
+input{
+    padding:4px;
+    margin:0px;
+    float:right;
+    height:24px;
+    overflow:hidden;
+    line-height:16px;
+}
+
+.tab-buttons{
+    font-family: "Inter";
 }
 
 #icon{
@@ -26,6 +50,7 @@ h1{
     justify-content: center;
     align-content: center;
     align-items: center;
+    font-family:"Inter";
 }
 
 #heading{
@@ -35,6 +60,13 @@ h1{
 
 #message{
     text-align: center;
+    font-family:"Inter";
+    font-size: 18px;
+}
+#message1{
+    text-align: center;
+    font-family:"Inter";
+    font-size: 18px;
 }
 
 #title{
@@ -43,6 +75,20 @@ h1{
 
 #output{
     text-align: center;
+    font-family:"Inter";
+}
+
+#heading{
+    font-size: 18px; 
+}
+#bmi-output{
+    font-size: 18px;
+}
+#message1Imp{
+    font-size: 18px;
+}
+#messageImp{
+    font-size: 18px;
 }
 
 #tb{
@@ -68,3 +114,94 @@ h1{
     width: 280px;
     margin-bottom: 20px;
 }
+#input-box{
+    display: flex;
+    height: 30px;
+}
+
+#weightDiv{
+    margin-right: 30px;
+
+}
+
+#heightDiv{
+    margin-right:30px;
+    display:flex;
+    height: 20px;
+    #label{
+        margin-right: 30px;
+    }
+}
+
+#submit{
+    font-family:"Inter";
+    border-radius: 5px;
+    color:white;
+    margin:0px;
+    height:40px;
+    overflow:hidden;
+    line-height:12px;
+    padding: 5px 5px 5px 5px;
+    background-color: #10A73D;
+    width: 80px;
+}
+    #submit:hover{
+        background-color: #0D772C;
+        transform: scale(1.1);
+    }
+#clear{
+    font-family:"Inter";
+    border-radius: 5px;
+    color:white;
+    height:40px;
+    border-color: white;
+    margin:0px;
+    width: 80px;
+    overflow:hidden;
+    line-height:12px;
+    padding: 5px 5px 5px 5px;
+}
+#clear:hover{
+    background-color: #6C6C6D;
+    transform: scale(1.1);
+}
+
+.tab-buttons {
+    display: flex;
+}
+
+.tab-button {
+    padding: 10px 20px;
+    border: 1px solid;
+    cursor: pointer;
+    background-color: #6C6C6D;
+    color: white;
+    
+    border-radius: 10% 10% 0% 0%;
+}
+
+.tab-button.active {
+    background-color: #bababb;
+    color:white;
+    border-radius: 10% 10% 0% 0%;
+}
+
+.tab-panel {
+    display: none;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.tab-panel.active {
+    display: block;
+    background-color: #bababb
+    
+}
+
+#icon{
+    height: 50px;
+    width: 100px;
+    vertical-align:middle;
+}
+
