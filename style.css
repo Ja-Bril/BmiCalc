@@ -1,13 +1,10 @@
 
 html{
 display: flex;
-justify-content: center;
-align-content: center;
-align-items: center;
+
 height:100%;
 margin: 0;
-padding: 30px;
-min-width: 1100px;
+padding: 20px;
 font-family: "Inter";
 font-size: 18px;
 font-weight: 400;
@@ -17,7 +14,7 @@ overflow: hidden;
 body{
     margin: 0; 
     height: 100%; 
-    overflow: hidden
+    overflow: hidden;
 }
 
 h1{
@@ -29,11 +26,9 @@ h1{
 }
 input{
     padding:4px;
-    margin:0px;
-    float:right;
     height:24px;
-    overflow:hidden;
     line-height:16px;
+    width: 40px;
 }
 
 .tab-buttons{
@@ -114,18 +109,16 @@ input{
     width: 280px;
     margin-bottom: 20px;
 }
-#input-box{
-    display: flex;
-    height: 30px;
-}
+
 
 #weightDiv{
-    margin-right: 30px;
+ 
 
 }
 
 #heightDiv{
-    margin-right:30px;
+    margin-top: 20px;
+ 
     display:flex;
     height: 20px;
     #label{
@@ -204,4 +197,11 @@ input{
     width: 100px;
     vertical-align:middle;
 }
-
+#btns{
+    margin-top: 40px;
+    margin-left: 28px;
+    
+}
+#input-box{
+    width: 200px;
+}
