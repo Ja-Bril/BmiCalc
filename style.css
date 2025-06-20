@@ -12,6 +12,7 @@ font-weight: 400;
 }
 #title{
      white-space: nowrap;
+     text-align: left;
 }
 
 body{
