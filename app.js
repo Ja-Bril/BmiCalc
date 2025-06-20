@@ -1,5 +1,10 @@
 //function
 function calculateBmi(){
+    underweight.innerHTML='';
+    normalrange.innerHTML='';
+    healthyweight.innerHTML='';
+    overweight.innerHTML='';
+    obese.innerHTML='';
     let weight = document.getElementById('weight').value
     let feet = document.getElementById('feet').value
     let inches = document.getElementById('inches').value
@@ -14,23 +19,23 @@ function calculateBmi(){
     
 
     if(bmi <= 18.4) {
-        document.getElementById('messageImp').innerHTML = 'You are in the underweight range';
-        document.getElementById('message1Metric').innerHTML = 'Normal weight range: 18.5-25';
+        document.getElementById('underweight').innerHTML = 'You are in the underweight range';
+        document.getElementById('normalrange').innerHTML = 'Normal weight range: 18.5-25';
 
     } else if (bmi >= 18.5 && bmi <= 24.9) {
-        document.getElementById('message').innerHTML = 'You are at a healthy weight'
+        document.getElementById('healthyweight').innerHTML = 'You are at a healthy weight'
 
     } else if(bmi >=25 && bmi <=29.9){
-        document.getElementById('messageImp').innerHTML = 'You are in the overweight range, however that may not necessarily mean unhealthy'
-        document.getElementById('message1Imp').innerHTML = 'Normal weight range: 18.5-25';
+        document.getElementById('overweight').innerHTML = 'You are in the overweight range, however that may not necessarily mean unhealthy'
+        document.getElementById('normalrange').innerHTML = 'Normal weight range: 18.5-25';
         //document.getElementById('message2').innerHTML= 'Individuals with the same BMI categorization: '
         //document.getElementById('tb').src = './assets/tom.png'
         //document.getElementById('adam').src = './assets/adam.png'
         //document.getElementById('alex').src = './assets/alex.png'
   
     } else if (bmi>=30){
-        document.getElementById('message').innerHTML = 'You are in the obese weight range, however that may not necessarily mean unhealthy'
-        document.getElementById('message1').innerHTML = 'Normal weight range: 18.5-25';
+        document.getElementById('obese').innerHTML = 'You are in the obese weight range, however that may not necessarily mean unhealthy'
+        document.getElementById('normalrange').innerHTML = 'Normal weight range: 18.5-25';
         //document.getElementById('message2').innerHTML= 'Individuals with the same BMI categorization: '
         //document.getElementById('donald').src = './assets/donald.png'
         //document.getElementById('mike').src = './assets/mike.png'
@@ -42,6 +47,11 @@ function calculateBmi(){
         
 }
 function calculateBmiMetric(){
+    underweight.innerHTML='';
+    normalrange.innerHTML='';
+    healthyweight.innerHTML='';
+    overweight.innerHTML='';
+    obese.innerHTML='';
     let heightCm = document.getElementById('heightCm').value;
     let heightM = heightCm/100
     let weightKg = document.getElementById('weightKg').value;
@@ -52,19 +62,19 @@ function calculateBmiMetric(){
     document.getElementById('bmi-output').innerHTML= bmiMetric.toFixed(1)
 
     if(bmiMetric <=18.4){
-        document.getElementById('message').innerHTML = 'You are in the underweight range';
-        document.getElementById('message1').innerHTML = 'Normal weight range: 18.5-25';
+        document.getElementById('underweight').innerHTML = 'You are in the underweight range';
+        document.getElementById('normalrange').innerHTML = 'Normal weight range: 18.5-25';
 
     }else if (bmiMetric >=18.5 && bmiMetric <=24.9) {
-        document.getElementById('message').innerHTML = 'You are at a healthy weight'
+        document.getElementById('healthyweight').innerHTML = 'You are at a healthy weight'
 
     } else if(bmiMetric >=25 && bmiMetric <=29.9){
-        document.getElementById('message').innerHTML = 'You are in the overweight range, however that may not necessarily mean unhealthy'
-        document.getElementById('message1').innerHTML = 'Normal weight range: 18.5-25';
+        document.getElementById('overweight').innerHTML = 'You are in the overweight range, however that may not necessarily mean unhealthy'
+        document.getElementById('normalrange').innerHTML = 'Normal weight range: 18.5-25';
   
     } else if (bmiMetric>=30){
-        document.getElementById('message').innerHTML = 'You are in the obese weight range, however that may not necessarily mean unhealthy'
-        document.getElementById('message1').innerHTML = 'Normal weight range: 18.5-25';
+        document.getElementById('obese').innerHTML = 'You are in the obese weight range, however that may not necessarily mean unhealthy'
+        document.getElementById('normalrange').innerHTML = 'Normal weight range: 18.5-25';
     }
     let img = document.getElementById('image');
         img.style.display='block'

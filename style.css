@@ -1,7 +1,6 @@
 
 html{
 display: flex;
-
 height:100%;
 margin: 0;
 padding: 20px;
@@ -9,10 +8,6 @@ font-family: "Inter";
 font-size: 18px;
 font-weight: 400;
 
-}
-#title{
-     white-space: nowrap;
-     text-align: left;
 }
 
 body{
@@ -22,8 +17,7 @@ body{
 }
 
 h1{
-    text-align: center;
-    display: inline-block;
+    text-align: left;
     font-family: "Public Sans";
     font-weight: 600;
     font-size: 36;
@@ -73,7 +67,7 @@ input{
 }
 
 #output{
-    text-align: center;
+    text-align: left;
     font-family:"Inter";
 }
 
@@ -208,4 +202,7 @@ input{
 }
 #input-box{
     width: 200px;
+}
+#image{
+    float:left;
 }
